@@ -1,0 +1,28 @@
+numpy
+pandas
+
+# Face Recognition
+scikit-learn
+dlib-bin
+
+
+# Face embeddings(Structure)
+git+https://github.com/ageitgey/face_recognition_models
+
+setuptools<70.0.0 # for setting up things that are downloaded but not part of py(directly)
+# for managing that 3rd party thing
+
+# DataBase
+supabase
+
+#hashing
+bcrypt
+
+# URL -> QR code
+segno
+
+# image pre-processing
+pillow
+
+# Front-end builder
+Streamlit
