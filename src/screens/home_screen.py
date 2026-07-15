@@ -17,7 +17,7 @@ def home_screen():
 
     with col1:
         st.markdown("""
-            <h2> I'm </br> Student</h2>
+            <h2 style="color:black;"> I'm </br> Student</h2>
         """, unsafe_allow_html=True)
 
         # st.header("I'm Student")
@@ -27,7 +27,10 @@ def home_screen():
             st.rerun()
 
     with col2:
-        st.header("I'm Teacher")
+        st.markdown("""
+            <h2 style="color:black;"> I'm </br> Teacher</h2>
+        """, unsafe_allow_html=True)
+        
         st.image("https://static.vecteezy.com/system/resources/thumbnails/059/608/779/small/vibrant-artistic-teacher-explaining-lesson-enthusiastic-gesture-4k-free-png.png", width=120)
         if st.button("Teacher portal ↗", type= 'primary'):
             st.session_state['login_type'] = 'Teacher'
