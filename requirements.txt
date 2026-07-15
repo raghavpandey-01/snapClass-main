@@ -1,3 +1,6 @@
+# Front-end builder
+Streamlit
+
 numpy
 pandas
 
@@ -24,5 +27,9 @@ segno
 # image pre-processing
 pillow
 
-# Front-end builder
-Streamlit
+
+
+librosa
+
+#make embeddings for voice
+resemblyzer

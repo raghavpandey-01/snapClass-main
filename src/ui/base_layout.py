@@ -19,7 +19,7 @@ def style_background_home():
 
     """,unsafe_allow_html=True)
 
-def style_base_dashboard():
+def style_background_dashboard():
     st.markdown("""
 
   <style>
@@ -44,9 +44,17 @@ def style_base_layout():
                 
         .block-container{
                 padding-top:1.5rem !important;
-                padding-bottom: 15px !important;
+               
         }
-
+        
+        input{
+                margin-top: 0px !important;
+                width: 665px !important;
+                border:none !important;
+                border-radius:0.4rem !important;
+                padding-left:10px !important;
+                
+        }
         h1{
             
             font-family: 'Climate Crisis', sans-serif !important;
@@ -65,8 +73,17 @@ def style_base_layout():
             font-size: 2rem !important;
             line-height: 0.9 !important;
             margin-bottom:0rem !important;
-        }          
-                
+        } 
+
+        .dash{
+               font-size: 1.7rem !important; 
+        }         
+
+        .register{
+                margin-top:0px !important;
+                padding-top:0px !important;
+                margin-bottom:50px !important;
+        }      
         h3,h4,p{
                 font-family: 'Outfit', sans-serif;
         }
@@ -86,7 +103,6 @@ def style_base_layout():
             padding: 10px 20px !important;
             border: none !important;
             transition: transform 0.25s ease-in-out !important;
-            margin-left: 2.7rem !important;
         }
         
         button[kind="tertiary"]{

@@ -10,3 +10,15 @@ def footer_home():
 
 
     """, unsafe_allow_html=True)
+
+
+def footer_dashboard():
+    st.markdown(f"""
+    
+    <div style = "margin-top:2rem; display:flex; justify-content:center; items-align:ceter; margin-bottom:10px" >
+       <p style = "font-weight: bold; color: black; "> <b> Made with ❤️ & Raghav </b> </p>
+    </div>
+
+
+    """, unsafe_allow_html=True)
+            
