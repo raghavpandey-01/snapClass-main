@@ -101,7 +101,7 @@ def predict_attendence(class_image_np):
         #jo id model ne predict ki hai us id ka embedding ko current encoding se comapre krna ki shi predicted hai ki nhi
         best_match_score = np.linalg.norm(student_embedding - encoding)
 
-        resemblance_threshold = 0.6
+        resemblance_threshold = 0.5
 
         if best_match_score <= resemblance_threshold:
             detected_student[predicted_id] = True

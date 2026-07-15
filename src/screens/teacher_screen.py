@@ -184,7 +184,7 @@ def teacher_tab_take_attendence():
                     else:                                                        
                         results, attenedence_to_log = [],[]
 
-                        current_timestamp = datetime.now().strftime("%Y-%m-%dT:%M:%S")
+                        current_timestamp = datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
                         for node in enrolled_students:
                             student = node['students']

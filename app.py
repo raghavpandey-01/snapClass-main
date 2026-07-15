@@ -5,6 +5,17 @@ from src.screens.teacher_screen import teacher_screen
 from src.screens.student_screen import student_screen
 from src.components.dialog_auto_enroll import auto_enroll_dialog
 
+from src.ui.base_layout import (
+    style_base_layout,
+    style_background_home,
+    style_background_dashboard,
+)
+
+
+st.set_page_config(
+    page_title='SnapClass - AI attendence make it easy',
+    page_icon= "https://home.edweb.net/wp-content/uploads/snapchat.jpg"
+)
 def main(): #defining the function
 #     st.header("This is the header")
 #     name = st.text_input('Enter your name')
@@ -39,11 +50,8 @@ def main(): #defining the function
 #       </div>
                 
 # """,unsafe_allow_html=True)
-    
-    st.set_page_config(
-        page_title='SnapClass - AI attendence make it easy',
-        page_icon= "https://home.edweb.net/wp-content/uploads/snapchat.jpg"
-    )
+    style_base_layout()
+
 
     if 'login_type' not in st.session_state:
         st.session_state['login_type'] = None
@@ -53,6 +61,7 @@ def main(): #defining the function
             teacher_screen()
 
         case 'Student':
+            style_background_dashboard()
             student_screen()       
             
             
