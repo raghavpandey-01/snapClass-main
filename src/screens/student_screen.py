@@ -27,7 +27,7 @@ def student_dashboard():
             st.rerun()
 
     with c2:
-        st.subheader(f"{student_data['name']}")
+        st.subheader(f"W-{student_data['name']}")
         if st.button("Logout", type='secondary', key='logoutbtn', shortcut="control+backspace"):
             st.session_state["is_logged_in"] = False
             del st.session_state.student_data
